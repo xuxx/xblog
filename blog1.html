@@ -44,17 +44,59 @@
             <h2 class="blog-post-title">HTML中引用静态资源的路径</h2>
             <p class="blog-post-meta">2014-12-09</p>
             <p>HTML中会有一些常用的静态资源，例如图片、CSS，Javascript等，这些资源通常都是定义在独立的文件（夹）中。</p>
-            
-            <p>法律的设计法律上登记费发的啥逻辑方式登陆福建速度发了多少积分多少分两块多少积分多少了房间多少发大水了方式登陆福建烦死了都费劲。</p>
-            <p>法律的设计法律上登记费发的啥逻辑方式登陆福建速度发了多少积分多少分两块多少积分多少了房间多少发大水了方式登陆福建烦死了都费劲。</p>
-            <p>法律的设计法律上登记费发的啥逻辑方式登陆福建速度发了多少积分多少分两块多少积分多少了房间多少发大水了方式登陆福建烦死了都费劲。</p>
-            <p>法律的设计法律上登记费发的啥逻辑方式登陆福建速度发了多少积分多少分两块多少积分多少了房间多少发大水了方式登陆福建烦死了都费劲。</p>
-            <p>法律的设计法律上登记费发的啥逻辑方式登陆福建速度发了多少积分多少分两块多少积分多少了房间多少发大水了方式登陆福建烦死了都费劲。</p>
-            <p>法律的设计法律上登记费发的啥逻辑方式登陆福建速度发了多少积分多少分两块多少积分多少了房间多少发大水了方式登陆福建烦死了都费劲。</p>
-            <p>法律的设计法律上登记费发的啥逻辑方式登陆福建速度发了多少积分多少分两块多少积分多少了房间多少发大水了方式登陆福建烦死了都费劲。</p>
-            <p>法律的设计法律上登记费发的啥逻辑方式登陆福建速度发了多少积分多少分两块多少积分多少了房间多少发大水了方式登陆福建烦死了都费劲。</p>
-            <p>法律的设计法律上登记费发的啥逻辑方式登陆福建速度发了多少积分多少分两块多少积分多少了房间多少发大水了方式登陆福建烦死了都费劲。</p>
-            <p>法律的设计法律上登记费发的啥逻辑方式登陆福建速度发了多少积分多少分两块多少积分多少了房间多少发大水了方式登陆福建烦死了都费劲。</p>
+
+            <p>HTML中引用静态资源的标签是：</p>
+<pre>
+&lt;script src="demo.js"&gt;&lt;/script&gt;  ——用于引用Javascript
+&lt;link href="demo.css" rel="stylesheet"&gt;  ——用于引用CSS
+&lt;img src="demo.jpg"&gt;  ——用于引用图片
+</pre>
+
+            <p>静态资源的引用一般用相对路径，用法如下：</p>
+            <table class="table table-bordered">
+              <tr><th>情景</th><th>目录结构</th><th>引用路径</th><th style="width:20%;">说明</th></tr>
+              <tr>
+                <td>在同级目录</td>
+                <td>
+                  -index.html
+                  <br>
+                  -demo.jpg
+                </td>
+                <td><code>&lt;img src="demo.jpg"&gt;</code>
+                    <br>或者<br>
+                    <code>&lt;img src="./demo.jpg"&gt;</code>
+                </td>
+                <td><span class="label label-default">.</span>表示当前目录</td>
+              </tr>
+              <tr>
+                <td>在子目录</td>
+                <td>
+                  -index.html
+                  <br>
+                  -imgs
+                  <br>
+                  --demo.jpg
+                </td>
+                <td><code>&lt;img src="imgs/demo.jpg"&gt;</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>在父目录</td>
+                <td>
+                  -demo.jpg
+                  <br>
+                  -pages
+                  <br>
+                  --index.html
+                </td>
+                <td><code>&lt;img src="../demo.jpg"&gt;</code></td>
+                <td><span class="label label-default">..</span>表示上一级目录</td>
+              </tr>
+            </table>
+
+            <p>一般来说，静态资源目录结构的最佳实践如下：</p>
+            <p><img src="img/b1-i1.png" alt="静态资源目录结构的最佳实践"></p>
+
           </div><!-- /.blog-post -->
 
         </div><!-- /.blog-main -->
