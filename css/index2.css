@@ -1,0 +1,102 @@
+body{
+background-color: #eee
+}
+h1{
+text-align:center;
+}
+.container{
+width: 960px;
+height: 450px;
+margin:0px auto;
+position: relative;
+}
+img{
+padding:10px 10px 15px;
+background:#fff;
+border:1px solid #ddd;
+position:absolute;
+
+
+-moz-transition:0.5s;
+-webkit-transition:0.5s;
+transition:rotate(0.5s);
+z-index:1;
+}
+img:hover{
+-webkit-transform:rotate(0deg);
+-moz-transform:rotate(0deg);
+transform:rotate(0deg);
+transform:scale(1.2);
+box-shadow:-10px 10px 15px #ccc 
+z-index:2;
+}
+.pic0{
+	left:100px;
+	top:0;
+	-moz-transform:rotate(-5deg);
+    -webkit-transform:rotate(-5deg);
+    transition:ro:rotate(-5deg);;
+}
+.pic1{
+	left:200px;
+	top:100;
+	-moz-transform:rotate(23deg);
+    -webkit-transform:rotate(23deg);
+    transition:ro:rotate(23deg);;
+}
+.pic2{
+	left:234px;
+	top:163;
+	-moz-transform:rotate(16deg);
+    -webkit-transform:rotate(16deg);
+    transition:ro:rotate(16deg);;
+}
+.pic3{
+	left:201px;
+	top:90;
+	-moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    transition:ro:rotate(45deg);;
+}
+.pic4{
+	left:200px;
+	top:300;
+	-moz-transform:rotate(60deg);
+    -webkit-transform:rotate(60deg);
+    transition:ro:rotate(60deg);;
+}
+.pic5{
+	left:500px;
+	top:30;
+	-moz-transform:rotate(-5deg);
+    -webkit-transform:rotate(-5deg);
+    transition:ro:rotate(-5deg);;
+}
+.pic6{
+	left:500px;
+	top:80;
+	-moz-transform:rotate(13deg);
+    -webkit-transform:rotate(13deg);
+    transition:ro:rotate(13deg);;
+}
+.pic7{
+	left:567px;
+	top:57;
+	-moz-transform:rotate(30deg);
+    -webkit-transform:rotate(30deg);
+    transition:ro:rotate(30deg);;
+}
+.pic8{
+	left:345px;
+	top:278;
+	-moz-transform:rotate(43deg);
+    -webkit-transform:rotate(43deg);
+    transition:ro:rotate(43deg);;
+}
+.pic9{
+	left:253px;
+	top:42;
+	-moz-transform:rotate(39deg);
+    -webkit-transform:rotate(39deg);
+    transition:ro:rotate(39deg);;
+}
