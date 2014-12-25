@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="导航菜单的制作">
+    <meta name="author" content="<xuxx<hello@xuxinxin.com">
+    <meta name="keywords" content="导航，菜单，导航菜单" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>徐鑫鑫的博客</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="index.html">博客</a>
+          <a class="blog-nav-item" href="blog2.html">关于我</a>
+        </nav>
+      </div>
+    </div>
+  <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <br>
+            <h2 class="blog-post-title">导航菜单的制作</h2>
+            <p class="blog-post-meta">2014-10-22</p>
+            <p>导航菜单几乎是网页中必不可少的组成结构,大体可以很为三种结构，1、垂直菜单 ；2、水平菜单 ；3、下拉菜单</p>
+            <p><span class="label label-warning">垂直菜单的制作</span></p>
+            
+            <pre>   
+              <marquee>fkghjfh</marquee>
+               &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+&lt;title&gt;导航菜单&lt;/title&gt;
+&lt;style type="text/css"&gt;
+*{margin:0; padding:0; font-size:14px;}
+ul{ list-style:none; width:100px}
+a{color:#333;text-decoration:none}
+a{ 
+    display:block; 
+    text-indent:20px; 
+    height:30px; line-height:30px;background-color:#efefef; margin-bottom:1px;}
+a:hover{ background-color:#F60; color:#fff}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;ul class="nav"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;首　　页&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;新闻快讯&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;产品展示&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;售后服务&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;联系我们&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+    <span class="label label-warning">效果图：</span><br><br>
+    <p><a href="http://img.mukewang.com/5384611100010e2001130174.jpg"><img alt="" src="http://img.mukewang.com/5384611100010e2001130174.jpg"></a></p><hr>
+    总结分析：<br>
+    *{margin:0; padding:0; font-size:14px;}<br>
+    /*清除默认样式，设置字号为14像素*/<br>
+    ul{ list-style:none; width:100px}<br>
+    /*清除项目符号，设置列表宽度为100像素*/<br>
+    a{color:#333;text-decoration:none}<br>
+    /*设置a标签内的字体颜色为黑色，清除下划线*/<br>
+    a{ 
+    display:block; 
+    text-indent:20px; 
+    height:30px; line-height:30px;background-color:#efefef; margin-bottom:1px;}<br>
+    /*因为a标签不是块级标签，所以要定义成块级元素，才能对宽高进行定义。字体缩进20像素。高和行高都为30像素，背景为灰色，底部边距为一个像素。*/<br>
+    a:hover{ background-color:#F60; color:#fff}<br>
+    /*设置鼠标经过时，背景颜色变为橙色，字体颜色变为白色*/<hr>
+    <p><span class="label label-warning">水平菜单的制作</span></p>
+    <pre>
+*{margin:0; padding:0; font-size:14px;}
+ul{ list-style:none;}
+a{color:#333;text-decoration:none}
+li{float:left;}
+li a{ display:block; text-indent:20px; height:30px; line-height:30px; width:100px; background-color:#efefef; margin-bottom:1px;}
+a:hover{ background-color:#F60; color:#fff}
+    </pre>
+      <span class="label label-warning">效果图：</span><br><br>
+<p><a href="http://img.mukewang.com/538462d10001feea05470034.jpg"><img alt="" src="http://img.mukewang.com/538462d10001feea05470034.jpg" style="height: 30px; width: 350px;"></a></p><hr>
+      总结分析：<br>
+      从样式表可以看出，水平菜单的制作很简单，只是增加了<span class="label label-success">float</span><br>浮动属性。
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
